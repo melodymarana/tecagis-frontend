@@ -1,0 +1,16 @@
+.drawer {
+	@apply relative z-50;
+  &-backdrop {
+    @apply fixed inset-y-0 left-0 right-0 bg-black bg-opacity-30 transition-opacity;
+  }
+  &-body {
+    @apply pointer-events-auto relative w-screen md:max-w-md;
+  }
+  &-container {
+    @apply flex h-full flex-col backdrop-brightness-150 bg-white bg-opacity-70 backdrop-blur-lg shadow-lg overflow-hidden;
+  }
+  &-header {
+    @apply flex items-center justify-between px-4 md:py-6 border-b border-b-grey-300;
+    height: 79px;
+  }
+}

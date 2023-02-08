@@ -1,0 +1,25 @@
+.card {
+	&-wrapper {
+		@apply rounded-md bg-white overflow-hidden;
+	}
+	&-media {
+		@apply relative;
+	}
+	&-content {
+		@apply p-4;
+	}
+	&-footer {
+		@apply px-4 flex justify-center;
+	}
+	.thumbnail {
+		@apply w-full;
+	}
+	.title {
+		@apply mb-2 text-lg font-medium;
+		@include truncate(2);
+	}
+	.description {
+		@apply text-gray-400;
+		@include truncate(3);
+	}
+}

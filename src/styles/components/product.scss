@@ -1,0 +1,46 @@
+.product-item {
+	.product-price {
+		@apply py-2 flex-1 border-t border-grey-300 text-center;
+	}
+	.badge {
+		@apply absolute -bottom-2.5 right-4;
+	}
+}
+
+// product
+.product-price {
+	.normal-price {
+		@apply text-sm text-gray-400 font-semibold line-through;
+	}
+	.discount-price {
+		@apply text-lg text-primary font-semibold;
+	}
+}
+
+.product-image {
+	@apply rounded-md overflow-hidden relative;
+	.badge {
+		@apply absolute bottom-4 right-4;
+	}
+	.image {
+		@apply w-full;
+	}
+}
+
+.product-detail {
+	.title {
+		@apply text-2xl font-medium mb-4;
+	}
+	.description {
+		@apply text-lg text-gray-400;
+	}
+	.product-price {
+		@apply pt-6;
+	}
+	.normal-price {
+		@apply text-lg;
+	}
+	.discount-price {
+		@apply text-2xl;
+	}
+}

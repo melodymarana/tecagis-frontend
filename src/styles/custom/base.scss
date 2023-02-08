@@ -1,0 +1,34 @@
+@layer base {
+	body {
+		background-color: theme('colors.grey.50');
+		color: theme('colors.grey.600');
+	}
+	h1 {
+		font-size: theme('fontSize.7xl');
+		font-weight: theme('fontWeight.semibold');
+	}
+	h2 {
+		font-size: theme('fontSize.6xl');
+		font-weight: theme('fontWeight.semibold');
+	}
+	h3 {
+		font-size: theme('fontSize.5xl');
+		font-weight: theme('fontWeight.semibold');
+	}
+	h4 {
+		font-size: theme('fontSize.4xl');
+		font-weight: theme('fontWeight.semibold');
+	}
+	h5 {
+		font-size: theme('fontSize.3xl');
+		font-weight: theme('fontWeight.semibold');
+	}
+	h6 {
+		@apply leading-6;
+		font-size: theme('fontSize.2xl'); //22px
+		font-weight: theme('fontWeight.semibold');
+	}
+	a {
+		@apply leading-normal;
+	}
+}

@@ -1,0 +1,36 @@
+{
+	"env": {
+		"es6": true,
+		"browser": true
+	},
+	"extends": [
+		"eslint:recommended",
+		/* "prettier",
+		"plugin:prettier/recommended", */
+		"plugin:react/recommended",
+		"plugin:react/jsx-runtime"
+	],
+	"plugins": ["react" /*, "import" , "prettier" */],
+	"rules": {
+		"react/prop-types": 0
+		/* "import/order": [
+			"error",
+			{
+				"groups": ["builtin", "external", "internal", "parent", "sibling", "index", "object"],
+				"newlines-between": "always",
+				"alphabetize": { "order": "asc", "caseInsensitive": true },
+				"warnOnUnassignedImports": true
+			}
+		] */
+	},
+	"parserOptions": {
+		"ecmaVersion": 6,
+		"sourceType": "module",
+		"ecmaFeatures": {
+			"jsx": true,
+			"modules": true,
+			"experimentalObjectRestSpread": true
+		}
+	},
+	"overrides": []
+}
